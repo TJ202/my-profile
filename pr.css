@@ -1,0 +1,115 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1611348586789-33dbd65e1e28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHNraWxsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60);
+    background-size: cover;
+    background-position: bottom;
+}
+
+h1 {
+    color: aliceblue;
+    font-family: 'Open Sans Condensed';
+    font-size: xx-large;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+span:before,
+span:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+span:before {
+    margin-right: 10px
+}
+
+span:after {
+    margin-left: 10px
+}
+
+.grid-container {
+    display: grid;
+    grid-template: auto / auto auto auto;
+    grid-gap: 5px;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    /* height: -webkit-fill-available; */
+}
+
+.grid-container>li,
+.licode {
+    background-color: rgba(240, 248, 255, 0.842);
+    text-align: center;
+    padding: 20px 0;
+    font-size: large;
+}
+
+.code {
+    display: none;
+}
+
+.divi {
+    display: table;
+}
+
+.divi:hover .licode {
+    display: none;
+}
+
+.divi:hover .code {
+    display: table-cell;
+    line-height: normal;
+    color: rgba(240, 248, 255, 0.842);
+    padding: 0 14px;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+}
+
+.tagline {
+    color: aliceblue;
+    font-size: small;
+    margin-top: 5px;
+}
+
+.intro {
+    margin: 0.5rem 1rem;
+    padding: 1rem 1rem;
+    background-color: rgba(240, 248, 255, 0.842);
+    font-family: Garamond, serif;
+    text-align: justify;
+    margin: 0 2rem;
+}
+
+.wrap {
+    display: flex;
+    /* height: 20pc; */
+    margin: 0 1rem;
+    padding: 1rem 1rem;
+    justify-content: space-evenly;
+    /* background-color: rgba(240, 248, 255, 0.589); */
+    font-family: Garamond, serif;
+}
+
+.text {
+    width: 60%;
+    text-align: justify;
+    padding: 0 1rem;
+    margin: 0;
+    /* background-color: rgba(240, 248, 255, 0.589); */
+}
