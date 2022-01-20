@@ -21,7 +21,7 @@ li {
 }
 
 img {
-    outline: 1px solid white;
+    outline: 2px double black;
     outline-offset: -4px;
 }
 
